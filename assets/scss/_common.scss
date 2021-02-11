@@ -1,0 +1,84 @@
+html {
+    font-size: $font-size;
+    overflow-y: scroll;
+}
+body {
+    font-size: $font-size;
+    font-family: $font-main;
+}
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+a {
+    color: $color-primary;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $color-accent;
+    }
+}
+
+
+h1 {
+    @include xs-min {
+        font-size: 3rem;  
+        margin: -7.5px 0 45px;
+    }
+
+    @include xs {
+        font-size: 2rem;  
+        margin: 0 0 30px;
+    }
+    
+    margin: 0;
+    font-family: $font-header;
+    margin-bottom: ($gap * 3);
+    margin-top: -7.5px;
+
+    &::after{
+        @extend %h1-h2-after;
+    }
+}
+
+h2 {
+
+    @include xs-min {
+    font-size: 2.5rem;
+    margin: 60px 0 45px 45px;
+    }
+
+    @include xs {
+        font-size: 1.75rem;
+        margin: 45px 0 30px 45px;
+    }
+
+    &::before {
+        position: absolute;
+        left: 0;
+        width: 30px;
+        margin: 0.25em 0 0 0;
+        content: "";
+        border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+    }
+
+    &::after {
+         @extend %h1-h2-after;
+    }
+}
+
+h3 {
+    @include xs-min {
+        font-size: 1.5rem;
+    }
+
+    @include xs {
+        font-size: 1.25rem;
+    }
+
+    a {
+    transition: color 0.25s;
+    }
+
+}   
