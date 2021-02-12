@@ -1,65 +1,30 @@
 .main {
-    @extend %margin-bottom-lg;
-    position: relative;
-    overflow: hidden;
-    
-    .site-search {
-      margin-bottom: 45px;
-    }
-  
-    .user-login {
-      margin-bottom: 60px !important; 
-    }
+  position: relative;
+
+  overflow: hidden;
+
+  @extend %margin-bottom-lg;
+
+  .site-search {
+    margin-bottom: 45px;
   }
 
-  .new-films {
-
-    &-row {
-      @extend %new-top-row;
-    }
-
-    &-item {
-      @extend %new-top-item;
-
-      &__image {
-        @extend %new-top-image;    
-      }
-      
-      &__thumbnail {
-        @extend %new-top-thumbnail;
-        
-        &:hover {
-          @extend %hover-thumbnail-main;
-        }
-      }
-      
-      &__title {
-        @extend %new-top-title;
-      }
-
-      &:hover {
-        h3 {
-          color: $color-light;
-        }
-      }
-      
-    }
+  .user-login {
+    margin-bottom: 60px !important;
   }
+}
 
-.top-week {
-
+.new-films {
   &-row {
     @extend %new-top-row;
   }
-  
+
   &-item {
     @extend %new-top-item;
 
-    
     &__image {
-      @extend %new-top-image;    
+      @extend %new-top-image;
     }
-    
 
     &__thumbnail {
       @extend %new-top-thumbnail;
@@ -70,28 +35,60 @@
     }
 
     &__title {
-    @extend %new-top-title;
+      @extend %new-top-title;
     }
 
-     &:hover {
-       h3 {
-         color: $color-light;
-       }
-     }
+    &:hover {
+      h3 {
+        color: $color-light;
+      }
+    }
+  }
+}
+
+.top-week {
+  &-row {
+    @extend %new-top-row;
+  }
+
+  &-item {
+    @extend %new-top-item;
+
+
+    &__image {
+      @extend %new-top-image;
+    }
+
+
+    &__thumbnail {
+      @extend %new-top-thumbnail;
+
+      &:hover {
+        @extend %hover-thumbnail-main;
+      }
+    }
+
+    &__title {
+      @extend %new-top-title;
+    }
+
+    &:hover {
+      h3 {
+        color: $color-light;
+      }
+    }
   }
 }
 
 .film-news {
- 
   &-item {
-
-
     &__image {
-      @extend %new-top-image
+      @extend %new-top-image;
     }
-   
+
     &__thumbnail {
       margin-bottom: 0;
+
       transition: background-color 0.25s;
 
       &:hover {
@@ -104,10 +101,13 @@
     }
     &__button {
       float: right;
+
       margin-bottom: 30px;
+
       transition: background-color 0.25s;
     }
-    &:hover {  h3 {
+    &:hover {
+      h3 {
         a {
           color: $color-accent;
         }

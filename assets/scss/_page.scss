@@ -1,26 +1,26 @@
 .film-info {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 
-    &__well {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+  &__well {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  &__wrapper {
+    white-space: nowrap;
+    &:not(:last-of-type) {
+      margin-right: 15px;
     }
-    &__wrapper {
-        white-space: nowrap;
-        &:not(:last-of-type) {
-            margin-right: 15px;
-        }
-    }
+  }
 
-    &__badge {
-        font-size: 0.8em;
-    }
+
+  &__badge {
+    font-size: 0.8em;
+  }
 }
 
 .film-comment-form {
-
-    &__button {
-        float: right;
-    }
+  &__button {
+    float: right;
+  }
 }
 
