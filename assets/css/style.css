@@ -8,25 +8,25 @@
 
 .new-films-item__title, .top-week-item__title {
   display: block;
-  font-size: 1rem;
-  margin: 0;
-  font-weight: bold;
   overflow: hidden;
+  margin: 0;
+  white-space: nowrap;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
-  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .new-films-row, .top-week-row {
-  margin-left: -7.5px;
   margin-right: -7.5px;
   margin-bottom: -15px;
+  margin-left: -7.5px;
 }
 
 .new-films-item, .top-week-item {
-  padding-left: 7.5px;
-  padding-right: 7.5px;
   margin-bottom: 15px;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
 }
 
 .new-films-item__image, .top-week-item__image, .film-news-item__image {
@@ -35,10 +35,10 @@
 
 .new-films-item__thumbnail, .top-week-item__thumbnail {
   margin-bottom: 0;
-  text-align: center;
   -webkit-transition: background-color 0.25s;
   -o-transition: background-color 0.25s;
   transition: background-color 0.25s;
+  text-align: center;
 }
 
 .new-films-item__thumbnail:hover, .top-week-item__thumbnail:hover {
@@ -49,14 +49,14 @@
 h1::after, h2::after {
   position: absolute;
   width: 100%;
-  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
-  content: "";
   margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
 }
 
 .navbar-inverse {
-  background-color: #191919;
   margin-bottom: 0;
+  background-color: #191919;
 }
 
 .navbar-inverse .navbar-nav > .active > a {
@@ -91,16 +91,16 @@ h1::after, h2::after {
 }
 
 .panel-info {
-  border: none;
   margin-bottom: 30px;
+  border: none;
 }
 
 .panel-info > .panel-heading {
-  color: #ffffff;
-  background-color: #df8a13;
-  border: none;
-  font-size: 1.2rem;
   letter-spacing: 0.1em;
+  color: #ffffff;
+  border: none;
+  background-color: #df8a13;
+  font-size: 1.2rem;
 }
 
 .panel-body {
@@ -129,13 +129,13 @@ h2 {
 }
 
 html {
-  font-size: 16px;
   overflow-y: scroll;
+  font-size: 16px;
 }
 
 body {
-  font-size: 16px;
   font-family: "PT Sans", sans-serif;
+  font-size: 16px;
 }
 
 section {
@@ -154,9 +154,9 @@ a:hover, a:focus {
 
 h1 {
   margin: 0;
-  font-family: "PT Serif", serif;
-  margin-bottom: 45px;
   margin-top: -7.5px;
+  margin-bottom: 45px;
+  font-family: "PT Serif", serif;
 }
 
 h2::before {
@@ -176,27 +176,27 @@ h3 a {
 
 .header-logo {
   padding: 100px 0;
+  text-align: center;
   background-color: #232323;
   background-image: url(../img/header-bg.jpg);
   background-position: 50% 50%;
   background-size: cover;
-  text-align: center;
 }
 
 .header-logo__title {
   display: block;
-  color: #df8a13;
-  font-size: 3.5rem;
-  font-family: "PT Serif", serif;
-  letter-spacing: 0.33em;
   margin-right: -15px;
+  letter-spacing: 0.33em;
+  color: #df8a13;
+  font-family: "PT Serif", serif;
+  font-size: 3.5rem;
 }
 
 .header-logo__description {
   display: block;
+  letter-spacing: 0.2em;
   color: #ffffff;
   font-size: 1.15rem;
-  letter-spacing: 0.2em;
 }
 
 .main {
@@ -277,8 +277,8 @@ h3 a {
 }
 
 .vertical-slider {
-  border-radius: 4px;
   overflow: hidden;
+  border-radius: 4px;
 }
 
 .vertical-slider__image {
@@ -298,9 +298,9 @@ h3 a {
 
 .user-login a {
   padding: 14px 5px 11px !important;
+  color: #dddddd;
   border: none !important;
   background-color: transparent !important;
-  color: #dddddd;
 }
 
 .user-login .active a {
@@ -308,8 +308,8 @@ h3 a {
 }
 
 .site-news-item {
-  clear: both;
   position: relative;
+  clear: both;
 }
 
 .site-news-item:not(:last-child) {
@@ -318,13 +318,13 @@ h3 a {
 }
 
 .site-news-item:not(:last-child)::after {
-  content: "";
   position: absolute;
+  right: 0;
+  bottom: -5px;
   width: calc(100% - 85px);
   height: 1px;
+  content: "";
   background-color: #dddddd;
-  bottom: -5px;
-  right: 0;
 }
 
 .site-news-item:hover a {
@@ -352,17 +352,17 @@ h3 a {
   transition: color 0.25s;
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
   height: 50px;
   font-size: 1rem;
   line-height: 1.5rem;
-  -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
 
 .site-news-item__date {
-  font-size: 0.8rem;
-  color: #909090;
   text-align: right;
+  color: #909090;
+  font-size: 0.8rem;
 }
 
 .thumbnail {
@@ -377,27 +377,27 @@ h3 a {
 }
 
 .top-films__item {
-  background-color: transparent;
-  margin-left: -1px;
   margin-right: -1px;
-  color: #165690 !important;
+  margin-left: -1px;
   padding-right: 55px;
+  color: #165690 !important;
+  background-color: transparent;
 }
 
 .top-films__item:first-child {
-  border-radius: 0;
   border-top: none;
+  border-radius: 0;
 }
 
 .top-films__item:last-child {
-  border-radius: 0;
   border-bottom: none;
+  border-radius: 0;
 }
 
 .top-films__item:hover, .top-films__item:focus {
+  color: #ffffff !important;
   border-color: #df8a13;
   background-color: #df8a13 !important;
-  color: #ffffff !important;
 }
 
 .top-films__item:hover .badge, .top-films__item:focus .badge {
@@ -407,10 +407,10 @@ h3 a {
 .top-films__badge {
   position: absolute;
   top: 50%;
+  right: 15px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: 15px;
 }
 
 .top-films__list {
@@ -418,9 +418,9 @@ h3 a {
 }
 
 .footer {
+  padding-top: 45px;
   color: #ffffff;
   background-color: #232323;
-  padding-top: 45px;
 }
 
 .footer a {
@@ -432,13 +432,13 @@ h3 a {
 }
 
 .footer ul {
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 .footer-fifth {
-  text-align: center;
   margin: 20px 0;
+  text-align: center;
 }
 
 .footer-fifth a {
@@ -447,20 +447,20 @@ h3 a {
 
 @media (min-width: 576px) {
   h1 {
-    font-size: 3rem;
     margin: -7.5px 0 45px;
+    font-size: 3rem;
   }
   h2 {
-    font-size: 2.5rem;
     margin: 60px 0 45px 45px;
+    font-size: 2.5rem;
   }
   h3 {
     font-size: 1.5rem;
   }
   .header-logo__title {
-    font-size: 3.5rem;
-    letter-spacing: 0.33em;
     margin-right: -15px;
+    letter-spacing: 0.33em;
+    font-size: 3.5rem;
   }
 }
 
@@ -490,19 +490,19 @@ h3 a {
 
 @media (max-width: 575.8px) {
   h1 {
-    font-size: 2rem;
     margin: 0 0 30px;
+    font-size: 2rem;
   }
   h2 {
-    font-size: 1.75rem;
     margin: 45px 0 30px 45px;
+    font-size: 1.75rem;
   }
   h3 {
     font-size: 1.25rem;
   }
   .header-logo__title {
-    font-size: 2.5rem;
-    letter-spacing: 0.2em;
     margin-right: -7.5px;
+    letter-spacing: 0.2em;
+    font-size: 2.5rem;
   }
 }
